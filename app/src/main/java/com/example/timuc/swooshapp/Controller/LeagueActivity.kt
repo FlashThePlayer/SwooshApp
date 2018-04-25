@@ -1,10 +1,12 @@
-package com.example.timuc.swooshapp
+package com.example.timuc.swooshapp.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.timuc.swooshapp.Utilities.EXTRA_LEAGUE
+import com.example.timuc.swooshapp.R
+import com.example.timuc.swooshapp.Utilities.TOGGLE_WARNING
 import kotlinx.android.synthetic.main.activity_league.*
 
 
@@ -19,7 +21,7 @@ class LeagueActivity : BaseActivity() {
 
     fun leagueNextClicked(view: View){
         if (selectedLeague.isEmpty()){
-            Toast.makeText(this, "Please select a league", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, TOGGLE_WARNING, Toast.LENGTH_SHORT).show()
         } else {
         val skillActivity = Intent(this, SkillActivity::class.java )
             skillActivity.putExtra(EXTRA_LEAGUE, selectedLeague)

@@ -15,4 +15,5 @@
     <string name="beginner">Beginner</string>
     <string name="expert">Expert</string>
     <string name="finish">FINISH</string>
+    <string name="search_stage_league">locking for Co-Ed players near you...</string>
 </resources>

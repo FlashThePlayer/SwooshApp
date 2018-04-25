@@ -1,4 +1,4 @@
-package com.example.timuc.swooshapp
+package com.example.timuc.swooshapp.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
