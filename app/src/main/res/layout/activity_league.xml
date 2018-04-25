@@ -42,22 +42,25 @@
                 android:text="@string/mens"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="206dp"
-                tools:layout_editor_absoluteX="136dp" android:id="@+id/toggleButton" android:textOff="@string/mens"
+                tools:layout_editor_absoluteX="136dp" android:id="@+id/leagueMensBtn" android:textOff="@string/mens"
                 android:textOn="@string/mens" android:fontFamily="@font/montserrat"
-                android:background="@drawable/swoosh_toggle" android:textColor="@android:color/background_light"/>
+                android:background="@drawable/swoosh_toggle" android:textColor="@android:color/background_light"
+                android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="@string/womans"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton2"
+                android:layout_height="wrap_content" android:id="@+id/leagueWomansBtn"
                 android:layout_marginBottom="16dp" android:layout_marginTop="16dp" android:textOff="@string/womans"
                 android:textOn="@string/womans" android:fontFamily="@font/montserrat"
-                android:textColor="@android:color/background_light" android:background="@drawable/swoosh_toggle"/>
+                android:textColor="@android:color/background_light" android:background="@drawable/swoosh_toggle"
+                android:onClick="onWomansClicked"/>
         <ToggleButton
                 android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="@string/co_ed"
+                android:layout_height="wrap_content" android:id="@+id/leagueCoEdBtn" android:textOff="@string/co_ed"
                 android:textOn="@string/co_ed" android:fontFamily="@font/montserrat"
-                android:textColor="@android:color/background_light" android:background="@drawable/swoosh_toggle"/>
+                android:textColor="@android:color/background_light" android:background="@drawable/swoosh_toggle"
+                android:onClick="onCoEdClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next"
